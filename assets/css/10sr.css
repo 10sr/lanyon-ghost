@@ -1,11 +1,30 @@
-h2 {
-    margin-top : 3em;
+body {
+    background-color: #f9f9f9;
 }
 
-h3 {
+
+.post-content h1 {
+    border-style : none none double none;
+    border-width : 0.1em;
+    border-color : #ccc;
     margin-top : 2em;
 }
 
-body {
-    background-color: #f9f9f9;
+.post-content h2 {
+    border-style : none none solid none;
+    border-width : 0.01em;
+    border-color : #aaa;
+    margin-top : 2em;
+}
+
+.post-content h3 {
+    margin-top : 2em;
+}
+
+
+.post-content pre {
+    background-color : #eee;
+    padding : 0.7em 0.7em;     /* topbuttom leftright*/
+    margin : 1em 1em;
+    text-indent: 0;
 }
