@@ -8,6 +8,7 @@ body {
     border-width : 0.1em;
     border-color : #ccc;
     margin-top : 2em;
+    margin-bottom : 1em;
 }
 
 .post-content h2 {
@@ -15,16 +16,20 @@ body {
     border-width : 0.01em;
     border-color : #aaa;
     margin-top : 2em;
+    margin-bottom : 1em;
 }
 
 .post-content h3 {
     margin-top : 2em;
+    margin-bottom : 1em;
 }
 
 
 .post-content pre {
     background-color : #eee;
-    padding : 0.7em 0.7em;     /* topbuttom leftright*/
-    margin : 1em 1em;
+    padding : 0.9em 0.9em;     /* topbuttom leftright*/
+    margin : 1em .4em;
     text-indent: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
