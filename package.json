@@ -1,4 +1,10 @@
 {
-  "name": "Lanyon",
-  "version": "1.1.0-10sr"
+  "name": "lanyon",
+  "version": "1.1.0-10sr",
+  "author": {
+    "email": "8.slashes@gmail.com"
+  },
+  "config": {
+    "posts_per_page": 5
+  }
 }
