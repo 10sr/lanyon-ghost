@@ -1,6 +1,7 @@
 {
   "name": "lanyon",
   "version": "1.1.0-10sr",
+  "keywords": ["ghost-theme"],
   "author": {
     "email": "8.slashes@gmail.com"
   },
