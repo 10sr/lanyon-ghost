@@ -42,3 +42,16 @@ body {
 blockquote {
   color: #666;
 }
+
+/* ? */
+body  {
+  /* font-family: sans-serif; */
+}
+
+/* Hide some elements */
+.post-footer .author-image {
+  display: none;
+}
+.post-footer .author {
+  display: none;
+}
