@@ -19,7 +19,7 @@
     <footer class="post-footer">
 
       {{! Everything inside the #author tags pulls data from the author }}
-      {{#author}}
+      {{#foreach authors}}
 
         {{#if profile_image}}
           <figure class="author-image">
@@ -41,7 +41,7 @@
           </div>
         </section>
 
-      {{/author}}
+      {{/foreach}}
 
     </footer>
 
