@@ -1,49 +1,49 @@
 {{!< default}}
 
 <article class="{{post_class}}">
-{{! Everything inside the #post tags pulls data from the post }}
-{{#post}}
+  {{! Everything inside the #post tags pulls data from the post }}
+  {{#post}}
 
-  <header class="post-header">
+    <header class="post-header">
       <h1 class="post-title">{{title}}</h1>
       <section class="post-meta">
-          <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>. By {{author}}.
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>. By {{author}}.
       </section>
-  </header>
+    </header>
 
-  <section class="post-content">
+    <section class="post-content">
       {{content}}
       {{#if tags}}Tags: {{tags}}{{/if}}
-  </section>
+    </section>
 
-  <footer class="post-footer">
+    <footer class="post-footer">
 
-  {{! Everything inside the #author tags pulls data from the author }}
-  {{#author}}
+      {{! Everything inside the #author tags pulls data from the author }}
+      {{#author}}
 
-      {{#if profile_image}}
-      <figure class="author-image">
-          <a class="img" href="{{url}}" style="background-image: url({{img_url}})"><span class="hidden">{{name}}'s Picture</span></a>
-      </figure>
-      {{/if}}
+        {{#if profile_image}}
+          <figure class="author-image">
+            <a class="img" href="{{url}}" style="background-image: url({{img_url}})"><span class="hidden">{{name}}'s Picture</span></a>
+          </figure>
+        {{/if}}
 
-      <section class="author">
+        <section class="author">
           <h4><a href="{{url}}">{{name}}</a></h4>
 
           {{#if bio}}
-              <p>{{bio}}</p>
+            <p>{{bio}}</p>
           {{else}}
-              <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+            <p>Read <a href="{{url}}">more posts</a> by this author.</p>
           {{/if}}
           <div class="author-meta">
-              {{#if location}}<span class="author-location">{{location}}</span>{{/if}}
-              {{#if website}}<span class="author-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+            {{#if location}}<span class="author-location">{{location}}</span>{{/if}}
+            {{#if website}}<span class="author-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
           </div>
-      </section>
+        </section>
 
-  {{/author}}
+      {{/author}}
 
-  </footer>
+    </footer>
 
-{{/post}}
+  {{/post}}
 </article>
